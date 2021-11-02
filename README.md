@@ -16,10 +16,10 @@ python -m simulator.main
 ```
 
 The simulator starts an IEC104 slave hosted on address `127.0.0.1` at port
-`9999`. The `scada` package needs to contain an implementation that would
-connect to the simulator and print the simulated data on console output. The
-simulator registers measurement changes on different protocol-specific addresses
-(ASDU), which serve as identifiers of ammeters.
+`9999`. A separate package needs to be implemented, that would connect to the
+simulator and print the simulated data on console output. The simulator
+registers measurement changes on different protocol-specific addresses (ASDU),
+which serve as identifiers of ammeters.
 
 Also, the implemented app needs to add together the three measured currents and
 display that as an additional measurement.
